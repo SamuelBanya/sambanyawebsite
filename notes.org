@@ -1,0 +1,51 @@
+* Progress
+<2024-03-05 Tue 21:48>: Continue here:
+- https://nextjs.org/learn/dashboard-app/optimizing-fonts-images
+
+<2024-03-11 Mon 18:21>: Continue here:
+- Practice: Adding a secondary font
+- https://nextjs.org/learn/dashboard-app/optimizing-fonts-images
+
+<2024-03-11 Mon 20:33>: Continue here:
+- Chapter 5: Navigating Between Pages
+- https://nextjs.org/learn/dashboard-app/navigating-between-pages
+
+<2024-03-25 Mon 20:49>: 
+I followed this guide in terms of how to setup Postgres for this project:
+- https://nextjs.org/learn/dashboard-app/setting-up-your-database
+
+I then used this command to install the Postgres dependencies:
+npm i @vercel/postgres
+
+I deployed a new PostgresSQL database, and then then went to Quick Start > .env.local tab within the Vercel site itself.
+
+I then copied the related .env.local information into the project's local '.env.local' file itself.
+
+I then modified the 'package.json' file to look like this:
+```
+"scripts": {
+  "build": "next build",
+  "dev": "next dev",
+  "start": "next start",
+  "seed": "node -r dotenv/config ./scripts/seed.js"
+},
+```
+
+I then ran this command:
+```
+npm run seed
+```
+
+Continue here:
+https://nextjs.org/learn/dashboard-app/static-and-dynamic-rendering
+
+Continue here:
+https://nextjs.org/learn/dashboard-app/mutating-data
+
+NOTE:
+I had to use this page to figure out how to use 'index.d.ts' file to import 'next-auth' properly:
+- https://github.com/nextauthjs/next-auth/issues/210
+
+NOTE:
+- I can use this as an example for my art gallery website:
+- https://vercel.com/templates/next.js/image-gallery-starter
