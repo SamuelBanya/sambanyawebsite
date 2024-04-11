@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import NavLinks from '@/app/ui/dashboard/nav-links';
+import NavLinks from '@/app/ui/home/nav-links';
 import SamLogo from '../sam-logo';
 
 export default function SideNav() {
