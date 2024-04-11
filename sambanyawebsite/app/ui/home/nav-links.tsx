@@ -5,11 +5,11 @@ import { usePathname } from 'next/navigation';
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
 const links = [
-  { name: 'Links', href: '/home' },
-  { name: 'Art', href: '/home/art' },
+  { name: 'Links', href: '/' },
+  { name: 'Art', href: '/art' },
   {
     name: 'Music',
-    href: '/home/music',
+    href: '/music',
   },
 ];
 
