@@ -15,8 +15,9 @@ export default async function SocialLinks() {
     <div className="w-full md:col-span-2">
       <div className="avatar">
         <div className="w-24 rounded-full">
-          <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+          {/* <img src="https://github.com/SamuelBanya/sambanyawebsite/blob/main/sambanyawebsite/public/profile-pic.jpg" /> */}
           {/* <img src="/public/profile-pic.jpg" alt="profile pic" /> */}
+          <img src="https://f4.bcbits.com/img/0035792289_20.jpg" />
         </div>
       </div>
       <h2 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
