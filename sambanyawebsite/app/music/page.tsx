@@ -49,7 +49,7 @@ export default function Page() {
     },
   ];
   return (
-    <>
+    <div data-theme="greytheme">
       <p>Music</p>
       {musicCards.map((musicCard) => {
         return (
@@ -73,6 +73,6 @@ export default function Page() {
           </>
         );
       })}
-    </>
+    </div>
   );
 }
