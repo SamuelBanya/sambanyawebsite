@@ -5,5 +5,9 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <p>Art</p>;
+  return (
+    <div data-theme="greytheme">
+      <p>Art</p>
+    </div>
+  );
 }

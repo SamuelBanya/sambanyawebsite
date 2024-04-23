@@ -12,17 +12,15 @@ export default async function SocialLinks() {
     },
   ];
   return (
-    <div className="w-full md:col-span-4">
+    <div className="grid grid-cols-1 content-center justify-center gap-4">
       <div className="avatar">
         <div className="w-24 rounded-full">
-<<<<<<< Updated upstream
-          <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-=======
           <img src="https://f4.bcbits.com/img/0035792289_20.jpg" />
->>>>>>> Stashed changes
         </div>
       </div>
-      <h2 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
+      <h2
+        className={`${lusitana.className} mb-4 text-xl font-bold md:text-2xl`}
+      >
         Sam Banya
       </h2>
       <h2 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
