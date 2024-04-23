@@ -2,7 +2,7 @@ import Link from 'next/link';
 import NavLinks from '@/app/ui/home/nav-links';
 import SamLogo from '../sam-logo';
 
-export default function SideNav() {
+export default function TopNav() {
   return (
     <div
       data-theme="greytheme"
