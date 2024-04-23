@@ -30,5 +30,20 @@ const config: Config = {
     },
   },
   plugins: [require('@tailwindcss/forms'), daisyui],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          primary: '#f54242',
+          secondary: '#f6d860',
+          accent: '#37cdbe',
+          neutral: '#000000',
+          'base-100': '#D3D3D3',
+        },
+      },
+      'dark',
+      'cupcake',
+    ],
+  },
 };
 export default config;
