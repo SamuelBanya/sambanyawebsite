@@ -4,15 +4,21 @@ import SamLogo from '../sam-logo';
 
 export default function TopNav() {
   return (
-    <div
-      data-theme="greytheme"
-      className="flex h-full flex-col px-3 py-4 md:px-2"
-    >
-      <div className="w-32 text-white md:w-40">
-        <SamLogo />
+    <div className="navbar bg-base-100">
+      <div className="flex-1">
+        <a className="btn btn-ghost text-xl">Sam Banya</a>
       </div>
-      <div className="flex grow flex-row md:flex-col md:space-x-0 md:space-y-2">
-        <NavLinks />
+      <div className="flex-none">
+        <ul className="menu menu-horizontal px-1">
+          <li>
+            <details>
+              <summary>Links</summary>
+              <ul className="rounded-t-none bg-base-100 p-2">
+                <NavLinks />
+              </ul>
+            </details>
+          </li>
+        </ul>
       </div>
     </div>
   );

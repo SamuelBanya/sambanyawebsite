@@ -20,9 +20,11 @@ export default function NavLinks() {
     <>
       {links.map((link) => {
         return (
-          <a key={link.name} href={link.href} className="link link-primary">
-            {link.name}
-          </a>
+          <li key={link.name}>
+            <a href={link.href} className="link link-primary">
+              {link.name}
+            </a>
+          </li>
         );
       })}
     </>
