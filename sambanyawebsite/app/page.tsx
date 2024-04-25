@@ -1,7 +1,7 @@
 import { Suspense } from 'react';
 import { CardSkeleton } from '@/app/ui/skeletons';
 import { Metadata } from 'next';
-import SocialLinks from '@/app/ui/home/social-links';
+import BandLinks from '@/app/ui/home/band-links';
 
 export const metadata: Metadata = {
   title: 'Links',
@@ -10,12 +10,9 @@ export const metadata: Metadata = {
 export default async function Page() {
   return (
     <main>
-      <div
-        data-theme="greytheme"
-        className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8"
-      >
+      <div data-theme="greytheme">
         <Suspense fallback={<CardSkeleton />}>
-          <SocialLinks />
+          <BandLinks />
         </Suspense>
       </div>
     </main>

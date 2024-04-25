@@ -9,14 +9,11 @@ export default function RootLayout({
   return (
     <html>
       <body>
-        <div
-          data-theme="greytheme"
-          className="flex h-screen flex-col md:flex-row md:overflow-hidden"
-        >
-          <div className="w-full flex-none md:w-64">
+        <div data-theme="greytheme">
+          <div>
             <TopNav />
           </div>
-          <div className="flex-grow p-6 md:overflow-y-auto md:p-12">
+          <div className="h-screen pt-40 md:flex md:justify-center">
             {children}
           </div>
         </div>
