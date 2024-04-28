@@ -13,9 +13,7 @@ export default function RootLayout({
           <div>
             <TopNav />
           </div>
-          <div className="h-screen pt-40 md:flex md:justify-center">
-            {children}
-          </div>
+          <div className="h-screen pt-40">{children}</div>
         </div>
       </body>
     </html>

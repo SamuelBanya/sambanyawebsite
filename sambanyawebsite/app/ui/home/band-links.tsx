@@ -31,7 +31,7 @@ export default async function BandLinks() {
     },
   ];
   return (
-    <div>
+    <div className="pb-8">
       <div className="avatar flex justify-center">
         <div className="w-24 rounded-full">
           <img src="https://f4.bcbits.com/img/0035792289_20.jpg" />

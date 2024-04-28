@@ -4,8 +4,9 @@ import SamLogo from '../sam-logo';
 
 export default function TopNav() {
   return (
-    <div className="navbar bg-base-100">
-      <div className="navbar-start">
+    // <div className="navbar bg-base-100">
+    <div className="grid grid-cols-2">
+      <div>
         <ul className="menu menu-horizontal px-1">
           <li>
             <details>
@@ -17,7 +18,7 @@ export default function TopNav() {
           </li>
         </ul>
       </div>
-      <div className="navbar-end">
+      <div>
         <a href="/" className="btn btn-ghost text-xl">
           Sam Banya
         </a>
