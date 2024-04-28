@@ -27,7 +27,7 @@ export default async function BandLinks() {
       name: 'The Bedside Morale',
       avatarLink:
         'https://i1.sndcdn.com/avatars-000181418066-8m4fri-t500x500.jpg',
-      href: 'https://soundcloud.com/the-bedside-morale',
+      bandLink: 'https://soundcloud.com/the-bedside-morale',
     },
   ];
   return (
