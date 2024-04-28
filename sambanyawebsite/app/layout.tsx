@@ -9,7 +9,7 @@ export default function RootLayout({
   return (
     <html>
       <body>
-        <div data-theme="greytheme">
+        <div data-theme="greytheme" className="w-screen">
           <div>
             <TopNav />
           </div>

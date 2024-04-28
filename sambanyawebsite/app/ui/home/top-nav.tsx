@@ -4,9 +4,8 @@ import SamLogo from '../sam-logo';
 
 export default function TopNav() {
   return (
-    // <div className="navbar bg-base-100">
-    <div className="grid grid-cols-2">
-      <div>
+    <div className="ml-2 mr-2 flex grid grid-cols-2">
+      <div className="flex justify-start">
         <ul className="menu menu-horizontal px-1">
           <li>
             <details>
@@ -18,7 +17,7 @@ export default function TopNav() {
           </li>
         </ul>
       </div>
-      <div>
+      <div className="flex justify-end">
         <a href="/" className="btn btn-ghost text-xl">
           Sam Banya
         </a>
