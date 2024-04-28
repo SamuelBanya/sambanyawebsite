@@ -50,14 +50,16 @@ export default async function BandLinks() {
       {links.map((link) => {
         return (
           <div key={link.name} className="flex justify-center py-2">
-            <button className="btn btn-warning w-64 rounded-3xl sm:w-96">
-              <div className="avatar">
-                <div className="w-6 rounded-full">
-                  <img src={link.avatarLink} />
+            <a href={link.bandLink}>
+              <button className="btn btn-warning w-64 rounded-3xl sm:w-96">
+                <div className="avatar">
+                  <div className="w-6 rounded-full">
+                    <img src={link.avatarLink} />
+                  </div>
                 </div>
-              </div>
-              <a href={link.bandLink}>{link.name}</a>
-            </button>
+                <h2>{link.name}</h2>
+              </button>
+            </a>
             <br />
             <br />
           </div>
