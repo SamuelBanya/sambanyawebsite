@@ -32,25 +32,25 @@ export default async function BandLinks() {
   ];
   return (
     <div>
-      <div className="avatar md:flex md:justify-center">
+      <div className="avatar flex justify-center">
         <div className="w-24 rounded-full">
           <img src="https://f4.bcbits.com/img/0035792289_20.jpg" />
         </div>
       </div>
       <h2
-        className={`${lusitana.className} mb-4 pt-4 text-xl font-bold md:flex md:justify-center md:text-2xl`}
+        className={`${lusitana.className} mb-4 flex justify-center pt-4 text-2xl text-xl font-bold`}
       >
         Sam Banya
       </h2>
       <h2
-        className={`${lusitana.className} mb-4 pb-2 text-xl md:flex md:justify-center md:text-2xl`}
+        className={`${lusitana.className} mb-4 flex justify-center pb-2 text-2xl text-xl`}
       >
         Artist, Musician
       </h2>
       {links.map((link) => {
         return (
-          <div key={link.name} className="py-2 md:flex md:justify-center">
-            <button className="btn btn-warning w-96 rounded-3xl">
+          <div key={link.name} className="flex justify-center py-2">
+            <button className="btn btn-warning w-64 rounded-3xl sm:w-96">
               <div className="avatar">
                 <div className="w-6 rounded-full">
                   <img src={link.avatarLink} />
