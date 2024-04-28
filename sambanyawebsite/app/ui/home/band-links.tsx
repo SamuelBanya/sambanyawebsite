@@ -27,38 +27,42 @@ export default async function BandLinks() {
       name: 'The Bedside Morale',
       avatarLink:
         'https://i1.sndcdn.com/avatars-000181418066-8m4fri-t500x500.jpg',
-      href: 'https://soundcloud.com/the-bedside-morale',
+      bandLink: 'https://soundcloud.com/the-bedside-morale',
     },
   ];
   return (
-    <div className="content-center">
-      <div className="avatar">
+    <div className="pb-8">
+      <div className="avatar flex justify-center">
         <div className="w-24 rounded-full">
           <img src="https://f4.bcbits.com/img/0035792289_20.jpg" />
         </div>
       </div>
       <h2
-        className={`${lusitana.className} mb-4 text-xl font-bold md:text-2xl`}
+        className={`${lusitana.className} mb-4 flex justify-center pt-4 text-2xl text-xl font-bold`}
       >
         Sam Banya
       </h2>
-      <h2 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
+      <h2
+        className={`${lusitana.className} mb-4 flex justify-center pb-2 text-2xl text-xl`}
+      >
         Artist, Musician
       </h2>
       {links.map((link) => {
         return (
-          <>
-            <button key={link.name} className="btn btn-warning rounded-3xl">
-              <div className="avatar">
-                <div className="w-6 rounded-full">
-                  <img src={link.avatarLink} />
+          <div key={link.name} className="flex justify-center py-2">
+            <a href={link.bandLink}>
+              <button className="btn btn-warning w-64 rounded-3xl sm:w-96">
+                <div className="avatar">
+                  <div className="w-6 rounded-full">
+                    <img src={link.avatarLink} />
+                  </div>
                 </div>
-              </div>
-              <a href={link.bandLink}>{link.name}</a>
-            </button>
+                <h2>{link.name}</h2>
+              </button>
+            </a>
             <br />
             <br />
-          </>
+          </div>
         );
       })}
     </div>

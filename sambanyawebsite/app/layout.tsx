@@ -9,13 +9,11 @@ export default function RootLayout({
   return (
     <html>
       <body>
-        <div data-theme="greytheme">
+        <div data-theme="greytheme" className="w-screen">
           <div>
             <TopNav />
           </div>
-          <div className="h-screen pt-40 md:flex md:justify-center">
-            {children}
-          </div>
+          <div className="h-screen pt-40">{children}</div>
         </div>
       </body>
     </html>
