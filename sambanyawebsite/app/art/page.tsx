@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Art',
@@ -429,87 +430,74 @@ export default function Page() {
 
   return (
     <div data-theme="greytheme">
-      <h1>Art 2024</h1>
-      <br />
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 justify-items-center pb-8">
+        <h1 className="text-2xl font-bold">Art 2024</h1>
+      </div>
+      <div className="grid grid-cols-1 justify-items-center gap-4">
         {art2024Images.map((image, index) => (
-          <Image
-            key={index}
-            src={image.path}
-            alt={image.name}
-            width={500}
-            height={500}
-          />
+          <Link key={index} href={image.path}>
+            <Image src={image.path} alt={image.name} width={500} height={500} />
+          </Link>
         ))}
       </div>
       <br />
-      <h1>Art 2023</h1>
+      <div className="grid grid-cols-1 justify-items-center pb-8">
+        <h1 className="text-2xl font-bold">Art 2023</h1>
+      </div>
       <br />
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 justify-items-center gap-4">
         {art2023Images.map((image, index) => (
-          <Image
-            key={index}
-            src={image.path}
-            alt={image.name}
-            width={500}
-            height={500}
-          />
+          <Link key={index} href={image.path}>
+            <Image src={image.path} alt={image.name} width={500} height={500} />
+          </Link>
         ))}
       </div>
       <br />
-      <h1>Art 2022</h1>
+      <div className="grid grid-cols-1 justify-items-center pb-8">
+        <h1 className="text-2xl font-bold">Art 2022</h1>
+      </div>
       <br />
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 justify-items-center gap-4">
         {art2022Images.map((image, index) => (
-          <Image
-            key={index}
-            src={image.path}
-            alt={image.name}
-            width={500}
-            height={500}
-          />
+          <Link key={index} href={image.path}>
+            <Image src={image.path} alt={image.name} width={500} height={500} />
+          </Link>
         ))}
       </div>
       <br />
-      <h1>Art 2021</h1>
+      <div className="grid grid-cols-1 justify-items-center pb-8">
+        <h1 className="text-2xl font-bold">Art 2021</h1>
+      </div>
       <br />
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 justify-items-center gap-4">
         {art2021Images.map((image, index) => (
-          <Image
-            key={index}
-            src={image.path}
-            alt={image.name}
-            width={500}
-            height={500}
-          />
+          <Link key={index} href={image.path}>
+            <Image src={image.path} alt={image.name} width={500} height={500} />
+          </Link>
         ))}
       </div>
       <br />
-      <h1>Art 2020</h1>
+      <div className="grid grid-cols-1 justify-items-center pb-8">
+        <h1 className="text-2xl font-bold">Art 2020</h1>
+      </div>
       <br />
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 justify-items-center gap-4">
         {art2020Images.map((image, index) => (
-          <Image
-            key={index}
-            src={image.path}
-            alt={image.name}
-            width={500}
-            height={500}
-          />
+          <Link key={index} href={image.path}>
+            <Image src={image.path} alt={image.name} width={500} height={500} />
+          </Link>
         ))}
       </div>
       <br />
-      <h1>Art 2019</h1>
+      <div className="grid grid-cols-1 justify-items-center pb-8">
+        <h1 className="text-2xl font-bold">Art 2019</h1>
+      </div>
       <br />
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 justify-items-center gap-4">
         {art2019Images.map((image, index) => (
-          <Image
-            key={index}
-            src={image.path}
-            alt={image.name}
-            width={500}
-            height={500}
-          />
+          <Link key={index} href={image.path}>
+            <Image src={image.path} alt={image.name} width={500} height={500} />
+          </Link>
         ))}
       </div>
     </div>
