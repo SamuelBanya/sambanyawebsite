@@ -204,6 +204,11 @@ export default function Page() {
     // a few carousels, and gives more of the overall art site vibe
 
     // Here is an example:
+
+    // Related post:
+    // https://github.com/vercel/next.js/discussions/17093
+
+    // Related demo:
     // https://bandcamp-embed-example.vercel.app/
     <div data-theme="greytheme">
       <div className="grid grid-cols-1 justify-items-center pb-8">
