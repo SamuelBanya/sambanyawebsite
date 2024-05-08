@@ -18,7 +18,7 @@ export default function Page() {
         iFrameSrc:
           'https://bandcamp.com/EmbeddedPlayer/album=4078273497/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/',
         iFrameHref: 'https://sambanya.bandcamp.com/album/lousy-cartographer',
-        iFrameTitle: 'Lousy Cartographer by Sam Banya<',
+        iFrameTitle: 'Lousy Cartographer by Sam Banya',
       },
     ],
   };
@@ -199,146 +199,69 @@ export default function Page() {
 
   return (
     // TODO:
-    // I think I should go with a grid approach for the Bandcamp links here
+    // I think I should go with a loose grid approach for the Bandcamp links
     // This would be a bit more fun and accessible than trying to navigate
     // a few carousels, and gives more of the overall art site vibe
 
     // Here is an example:
     // https://bandcamp-embed-example.vercel.app/
     <div data-theme="greytheme">
-      <div className="grid grid-cols-1 justify-items-center gap-8 pb-8">
+      <div className="grid grid-cols-1 justify-items-center pb-8">
         <h1 className="font-bol text-2xl">Music</h1>
-        {
-          <>
-            <div
-              className={`card w-full bg-base-100 shadow-xl ${samBanyaMusicCard.backgroundColor}`}
+      </div>
+      <div>
+        {samBanyaMusicCard.albums.map((album, index) => {
+          return (
+            <iframe
+              key={index}
+              style={{
+                border: '0',
+                width: '350px',
+                height: '470px',
+              }}
+              src={`${album.iFrameSrc}`}
+              seamless
             >
-              <div className="card-body">
-                <div className="card-body grid grid-cols-1 justify-items-center">
-                  <h2 className="card-title text-3xl">
-                    {samBanyaMusicCard.bandName}
-                  </h2>
-                  <h2 className="text-xl">{samBanyaMusicCard.description}</h2>
-                </div>
-                <div className="grid grid-cols-1 items-center">
-                  {/* <div className="justify-beginning card-actions">
-                    <button className="btn btn-primary">Previous</button>
-                  </div> */}
-                  <div>
-                    <div>
-                      {samBanyaMusicCard.albums.map((album, index) => {
-                        return (
-                          <iframe
-                            key={index}
-                            style={{
-                              border: '0',
-                              width: '100%',
-                              height: '120px',
-                            }}
-                            src={`${album.iFrameSrc}`}
-                            seamless
-                          >
-                            <a
-                              href={`${album.iFrameHref}`}
-                            >{`${album.iFrameTitle}`}</a>
-                          </iframe>
-                        );
-                      })}
-                    </div>
-                  </div>
-                  {/* <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Next</button>
-                  </div> */}
-                </div>
-              </div>
-            </div>
-          </>
-        }
-        {
-          <>
-            <div
-              className={`card w-96 bg-base-100 shadow-xl ${jeeveSobsMusicCard.backgroundColor}`}
+              <a href={`${album.iFrameHref}`}>{`${album.iFrameTitle}`}</a>
+            </iframe>
+          );
+        })}
+      </div>
+      <div>
+        {jeeveSobsMusicCard.albums.map((album, index) => {
+          return (
+            <iframe
+              key={index}
+              style={{
+                border: '0',
+                width: '350px',
+                height: '470px',
+              }}
+              src={`${album.iFrameSrc}`}
+              seamless
             >
-              <div className="card-body">
-                <h2 className="card-title text-3xl">
-                  {jeeveSobsMusicCard.bandName}
-                </h2>
-                <h2 className="text-xl">{jeeveSobsMusicCard.description}</h2>
-                <div className="justify-beginning card-actions">
-                  <button className="btn btn-primary">Previous</button>
-                </div>
-                <div>
-                  <div>
-                    {jeeveSobsMusicCard.albums.map((album, index) => {
-                      return (
-                        <iframe
-                          key={index}
-                          style={{
-                            border: '0',
-                            width: '100%',
-                            height: '120px',
-                          }}
-                          src={`${album.iFrameSrc}`}
-                          seamless
-                        >
-                          <a
-                            href={`${album.iFrameHref}`}
-                          >{`${album.iFrameTitle}`}</a>
-                        </iframe>
-                      );
-                    })}
-                  </div>
-                </div>
-                <div className="card-actions justify-end">
-                  <button className="btn btn-primary">Next</button>
-                </div>
-              </div>
-            </div>
-          </>
-        }
-
-        {
-          <>
-            <div
-              className={`card w-96 bg-base-100 shadow-xl ${shibesMusicCard.backgroundColor}`}
+              <a href={`${album.iFrameHref}`}>{`${album.iFrameTitle}`}</a>
+            </iframe>
+          );
+        })}
+      </div>
+      <div>
+        {shibesMusicCard.albums.map((album, index) => {
+          return (
+            <iframe
+              key={index}
+              style={{
+                border: '0',
+                width: '350px',
+                height: '470px',
+              }}
+              src={`${album.iFrameSrc}`}
+              seamless
             >
-              <div className="card-body">
-                <h2 className="card-title text-3xl">
-                  {shibesMusicCard.bandName}
-                </h2>
-                <h2 className="text-xl">{shibesMusicCard.description}</h2>
-                <div className="justify-beginning card-actions">
-                  <button className="btn btn-primary">Previous</button>
-                </div>
-                <div>
-                  <div>
-                    {shibesMusicCard.albums.map((album, index) => {
-                      return (
-                        <iframe
-                          key={index}
-                          style={{
-                            border: '0',
-                            width: '100%',
-                            height: '120px',
-                          }}
-                          src={`${album.iFrameSrc}`}
-                          seamless
-                        >
-                          <a
-                            href={`${album.iFrameHref}`}
-                          >{`${album.iFrameTitle}`}</a>
-                        </iframe>
-                      );
-                    })}
-                  </div>
-                </div>
-                <div className="card-actions justify-end">
-                  <button className="btn btn-primary">Next</button>
-                </div>
-              </div>
-            </div>
-          </>
-        }
+              <a href={`${album.iFrameHref}`}>{`${album.iFrameTitle}`}</a>
+            </iframe>
+          );
+        })}
       </div>
     </div>
   );
