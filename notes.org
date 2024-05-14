@@ -49,3 +49,15 @@ I had to use this page to figure out how to use 'index.d.ts' file to import 'nex
 NOTE:
 - I can use this as an example for my art gallery website:
 - https://vercel.com/templates/next.js/image-gallery-starter
+
+
+I think I should go with a loose grid approach for the Bandcamp links
+
+This would be a bit more fun and accessible than trying to navigate a few carousels, and gives more of the overall art site vibe
+
+Here is an example:
+Related post:
+- https://github.com/vercel/next.js/discussions/17093
+
+Related demo:
+- https://bandcamp-embed-example.vercel.app/

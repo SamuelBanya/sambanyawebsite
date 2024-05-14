@@ -198,23 +198,11 @@ export default function Page() {
   };
 
   return (
-    // TODO:
-    // I think I should go with a loose grid approach for the Bandcamp links
-    // This would be a bit more fun and accessible than trying to navigate
-    // a few carousels, and gives more of the overall art site vibe
-
-    // Here is an example:
-
-    // Related post:
-    // https://github.com/vercel/next.js/discussions/17093
-
-    // Related demo:
-    // https://bandcamp-embed-example.vercel.app/
     <div data-theme="greytheme">
       <div className="grid grid-cols-1 justify-items-center pb-8">
         <h1 className="font-bol text-2xl">Music</h1>
       </div>
-      <div>
+      <div className="mx-10 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5">
         {samBanyaMusicCard.albums.map((album, index) => {
           return (
             <iframe
@@ -231,8 +219,6 @@ export default function Page() {
             </iframe>
           );
         })}
-      </div>
-      <div>
         {jeeveSobsMusicCard.albums.map((album, index) => {
           return (
             <iframe
@@ -249,8 +235,6 @@ export default function Page() {
             </iframe>
           );
         })}
-      </div>
-      <div>
         {shibesMusicCard.albums.map((album, index) => {
           return (
             <iframe
