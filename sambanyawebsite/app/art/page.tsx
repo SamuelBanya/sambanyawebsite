@@ -440,11 +440,9 @@ export default function Page() {
           </Link>
         ))}
       </div>
-      <br />
-      <div className="grid grid-cols-1 justify-items-center pb-8">
+      <div className="grid grid-cols-1 justify-items-center pb-8 pt-8">
         <h1 className="text-2xl font-bold">Art 2023</h1>
       </div>
-      <br />
       <div className="grid grid-cols-2 justify-items-center gap-4">
         {art2023Images.map((image, index) => (
           <Link key={index} href={image.path}>
@@ -452,11 +450,9 @@ export default function Page() {
           </Link>
         ))}
       </div>
-      <br />
-      <div className="grid grid-cols-1 justify-items-center pb-8">
+      <div className="grid grid-cols-1 justify-items-center pb-8 pt-8">
         <h1 className="text-2xl font-bold">Art 2022</h1>
       </div>
-      <br />
       <div className="grid grid-cols-2 justify-items-center gap-4">
         {art2022Images.map((image, index) => (
           <Link key={index} href={image.path}>
@@ -464,11 +460,9 @@ export default function Page() {
           </Link>
         ))}
       </div>
-      <br />
-      <div className="grid grid-cols-1 justify-items-center pb-8">
+      <div className="grid grid-cols-1 justify-items-center pb-8 pt-8">
         <h1 className="text-2xl font-bold">Art 2021</h1>
       </div>
-      <br />
       <div className="grid grid-cols-2 justify-items-center gap-4">
         {art2021Images.map((image, index) => (
           <Link key={index} href={image.path}>
@@ -476,11 +470,9 @@ export default function Page() {
           </Link>
         ))}
       </div>
-      <br />
-      <div className="grid grid-cols-1 justify-items-center pb-8">
+      <div className="grid grid-cols-1 justify-items-center pb-8 pt-8">
         <h1 className="text-2xl font-bold">Art 2020</h1>
       </div>
-      <br />
       <div className="grid grid-cols-2 justify-items-center gap-4">
         {art2020Images.map((image, index) => (
           <Link key={index} href={image.path}>
@@ -488,11 +480,9 @@ export default function Page() {
           </Link>
         ))}
       </div>
-      <br />
-      <div className="grid grid-cols-1 justify-items-center pb-8">
+      <div className="grid grid-cols-1 justify-items-center pb-8 pt-8">
         <h1 className="text-2xl font-bold">Art 2019</h1>
       </div>
-      <br />
       <div className="grid grid-cols-2 justify-items-center gap-4">
         {art2019Images.map((image, index) => (
           <Link key={index} href={image.path}>
