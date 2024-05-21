@@ -7,10 +7,6 @@ import { usePathname } from 'next/navigation';
 const links = [
   { name: 'Bands', href: '/' },
   { name: 'Art', href: '/art' },
-  {
-    name: 'Music',
-    href: '/music',
-  },
 ];
 
 export default function NavLinks() {
